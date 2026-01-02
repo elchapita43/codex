@@ -103,3 +103,4 @@ Instructions for modifying the Codex CLI codebase itself.
     *   Prefer `cargo nextest` for running tests.
     *   Integration tests are widely used; ensure environment consistency (see `AGENTS.md` regarding sandboxing).
 *   **Subagents:** The project implements a "Subagents" feature (v2), allowing for parallel and sequential execution of specialized agents (Explore, Plan, General). Use `codex-rs/core/src/subagents.rs` for core logic reference.
+*   **Contribution Policy:** New features require an approved issue before implementation. Prioritize bugs/security fixes. See `docs/contributing.md`.
