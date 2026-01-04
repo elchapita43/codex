@@ -69,6 +69,39 @@ Codex CLI supports a rich set of configuration options, with preferences stored 
 
 ---
 
+# Codex Subagents Fork
+
+Fork of OpenAI Codex CLI with native subagent support.
+
+## Features
+- `spawn_subagents`: Parallel execution (up to 24 agents)
+- `chain_subagents`: Sequential with {{previous_output}} templating
+- Context isolation per agent
+- Read-only explore mode
+- Uses gpt-5.1-codex-mini for subagents (faster & cheaper)
+
+## Installation
+```bash
+git clone https://github.com/elchapita43/codex.git
+cd codex/codex-rs
+cargo build --release -p codex-cli
+./target/release/codex
+```
+
+## Usage
+
+The main agent can now spawn subagents for research tasks:
+```
+> Investigate the authentication system using subagents
+```
+
+## Status
+v0.1 - Early development, works but still has rough edges.
+
+## Credits
+Inspired by Claude Code's subagent architecture.
+
+
 ### Docs & FAQ
 
 - [**Getting started**](./docs/getting-started.md)
